@@ -1,0 +1,188 @@
+[
+    {
+        "category": "pizza",
+        "name": "Mussarela",
+        "preco": 40.00,
+        "descricao": "Pizza de Queijo Mussarela com Azeitonas e Orégano"
+    },
+    {
+        "category": "pizza",
+        "name": "Calabresa",
+        "preco": 40.00,
+        "descricao": "Pizza Coberta por Calabresa e Extrato de Molho de Tomate"
+    },
+    {
+        "category": "pizza",
+        "name": "Margherita",
+        "preco": 40.00,
+        "descricao": "Pizza de Molho de Tomate, mussarela de búfala e manjericão"
+    },
+    {
+        "category": "pizza",
+        "name": "4 Queijos",
+        "preco": 45.00,
+        "descricao": "Pizza Contendo Queijo Cheddar, Catupiry, Mussarela e Queijo Minas"
+    },
+    {
+        "category": "pizza",
+        "name": "Portuguesa",
+        "preco": 45.00,
+        "descricao": "Pizza Contendo Ovos, Linguiça Calabresa, Queijo Mussarela e Orégano."
+    },
+    {
+        "category": "pizza",
+        "name": "Frango com Catupiry",
+        "preco": 45.00,
+        "descricao": "Contém Frango e Catupiry com orégano"
+    },
+    {
+        "category": "pizza",
+        "name": "Milho Verde",
+        "preco": 45.00,
+        "descricao": "Pizza de Mussarela coberta por milho verde"
+    },
+    {
+        "category": "esfiha",
+        "name": "Carne",
+        "preco": 3.00,
+        "descricao": "Esfiha de Carne de patinho moído com tomates e cebola."
+    },
+    {
+        "category": "esfiha",
+        "name": "Queijo Minas",
+        "preco": 3.50,
+        "descricao": "Esfiha de queijo Minas e orégano"
+    },
+    {
+        "category": "esfiha",
+        "name": "Queijo Mussarela",
+        "preco": 3.50,
+        "descricao": "Esfiha coberta com 4 fatias de queijo mussarela"
+    },
+    {
+        "category": "esfiha",
+        "name": "Calabresa com Catupiry",
+        "preco": 3.20,
+        "descricao": "Esfiha de linguiça calabresa moída coberta por catupiry e orégano."
+    },
+    {
+        "category": "esfiha",
+        "name": "Frango com Catupiry",
+        "preco": 3.20,
+        "descricao": "Esfiha de Frango desfiado coberto por molho de tomate e por catupiry e orégano."
+    },
+    {
+        "category": "esfiha",
+        "name": "Mista (Presunto e Queijo)",
+        "preco": 3.50,
+        "descricao": "Esfiha de Presunto contendo queijo mussarela derretido por cima."
+    },
+    {
+        "category": "esfiha",
+        "name": "Espinafre",
+        "preco": 3.90,
+        "descricao": "Esfiha de Espinafre coberta por catupiry."
+    },
+    {
+        "category": "bebida",
+        "name": "Coca-Cola - 2 Litros",
+        "preco": 13.00,
+        "descricao": ""
+    },
+    {
+        "category": "bebida",
+        "name": "Fanta Laranja - 2 Litros",
+        "preco": 11.00,
+        "descricao": ""
+    },
+    {
+        "category": "bebida",
+        "name": "Fanta Uva - 2 Litros",
+        "preco": 11.00,
+        "descricao": ""
+    },
+    {
+        "category": "bebida",
+        "name": "Fanta Guaraná - 2 Litros",
+        "preco": 11.00,
+        "descricao": ""
+    },
+    {
+        "category": "bebida",
+        "name": "Suco Natural Laranja - 2 Litros",
+        "preco": 15.00,
+        "descricao": ""
+    },
+    {
+        "category": "bebida",
+        "name": "Suco de Açaí - 1.5 Litros",
+        "preco": 19.00,
+        "descricao": "Suco preparado com açaí misturado com leite integral e leite condensado."
+    },
+    {
+        "category": "bebida",
+        "name": "Milkshake de Chocolate - 500 ML",
+        "preco": 10.00,
+        "descricao": "Milkshake preparado a partir de cinco bolas de sorvete de Chocolate e 2 de baunilha batido com 100 ML de Leite."
+    },
+    {
+        "category": "batatas",
+        "name": "Batata Frita Pequena",
+        "preco": 10.00,
+        "descricao": "200 G de Batata Frita"
+    },
+    {
+        "category": "batatas",
+        "name": "Batata Frita Média",
+        "preco": 15.00,
+        "descricao": "500 G de Batata Frita"
+    },
+    {
+        "category": "batatas",
+        "name": "Batata Frita Grande",
+        "preco": 20.00,
+        "descricao": "1 KG de Batata Frita"
+    },
+    {
+        "category": "batatas",
+        "name": "Batata Frita Com Cheddar e Bacon Pequena",
+        "preco": 15.00,
+        "descricao": "200 G de Batata Frita misturada com 50 G de Bacon e 50 G de Cheddar"        
+    },
+    {
+        "category": "batatas",
+        "name": "Batata Frita Com Cheddar e Bacon Média",
+        "preco": 20.00,
+        "descricao": "500 G de Batata Frita misturada com 125 G de Bacon e 125 G de Cheddar"
+    },
+    {
+        "category": "batatas",
+        "name": "Batata Frita Com Cheddar e Bacon Grande",
+        "preco": 25.00,
+        "descricao": "1 KG de Batata Frita misturada com 250 G de Bacon e 250 G de Cheddar"
+    },
+    {
+        "category": "esfihas doces",
+        "name": "Chocolate",
+        "preco": 7.00,
+        "descricao": "Esfiha coberta de ganache de chocolate meio-amargo derretido"
+    },
+    {
+        "category": "esfihas doces",
+        "name": "Chocolate Com M&Ms",
+        "preco": 8.00,
+        "descricao": "Esfiha coberta de ganache de chocolate meio-amargo derretido com M&Ms"
+    },
+    {
+        "category": "esfihas doces",
+        "name": "Prestígio",
+        "preco": 8.00,
+        "descricao": "Esfiha coberta de ganache de chocolate meio-amargo derretido com Coco Ralado"
+    },
+    {
+        "category": "esfihas doces",
+        "name": "Romeu e Julieta",
+        "preco": 8.00,
+        "descricao": "Esfiha coberta por Goiabada e Queijo Mussarela"
+    }
+]

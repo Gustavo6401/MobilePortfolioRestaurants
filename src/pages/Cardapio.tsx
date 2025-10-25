@@ -1,16 +1,34 @@
 import { useEffect, useState } from "react";
-import Prato from "../model/Prato";
 import CardapioAPI from "../api/cardapioAPI";
-import { FlatList, Text, View } from "react-native";
+import { SectionList, Text, View } from "react-native";
+
+type Cardapio = {
+    category: string,
+    data: {
+        name: string,
+        preco: number,
+        descricao: string
+    }[]
+}
 
 export default function Cardapio() {
-    const [cardapio, setCardapio] = useState<Array<Prato>>(new Array<Prato>())
+    const [cardapio, setCardapio] = useState<Array<Cardapio>>(new Array<Cardapio>())
     const [api] = useState<CardapioAPI>(new CardapioAPI())
 
     useEffect(() => {
         const getCardapio = async () => {
-            const pratos = await api.get()
-            setCardapio(pratos)
+            const pratos = await api.index()
+
+            const model: Array<Cardapio> = pratos.map(section => ({
+                category: section.getTitle(),
+                data: section.getItem().map(prato => ({
+                    name: prato.getName(),
+                    preco: prato.getPreco(),
+                    descricao: prato.getDescricao()
+                }))
+            }))
+
+            setCardapio(model)
         }
 
         getCardapio()
@@ -18,7 +36,20 @@ export default function Cardapio() {
 
     return (
         <View>
-            <FlatList data={cardapio} renderItem={({item}) => <Text>{item.getName()}</Text>} />
+            <SectionList 
+                sections={cardapio}
+                keyExtractor={(item) => item.name}
+                renderSectionHeader={({ section }) => (
+                    <Text>{section.category}</Text>
+                )}
+                renderItem={({item}) => (
+                    <View>
+                        <Text>{item.name}</Text>
+                        <Text>R$ {item.preco}</Text>
+                        <Text>{item.descricao}</Text>
+                    </View>
+                )}
+             />
         </View>
     )
 }

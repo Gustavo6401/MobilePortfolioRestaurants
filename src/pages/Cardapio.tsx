@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import CardapioAPI from "../api/cardapioAPI";
 import { StyleSheet, SectionList, Text, View } from "react-native";
+import Moeda from "../components/Moeda";
 
 type Cardapio = {
     category: string,
@@ -12,9 +13,15 @@ type Cardapio = {
 }
 
 const styles = StyleSheet.create({
+    titulo: {
+        color: 'white',
+        textAlign: 'center',
+        fontSize: 32
+    },
     container: {
         flex: 1,
-        paddingTop: 22
+        paddingTop: 22,
+        backgroundColor: '#332D2D'
     },
     sectionHeader: {
         paddingTop: 2,
@@ -23,15 +30,24 @@ const styles = StyleSheet.create({
         paddingBottom: 2,
         fontSize: 14,
         fontWeight: 'bold',
-        backgroundColor: 'rgba(247,247,247,1.0)'
+        backgroundColor: 'rgba(247,247,247,1.0)',
+        marginBottom: 10,
+        marginLeft: 10,
+        marginRight: 10
     },
     item: {
         padding: 10,
         fontSize: 18,
-        height: 44
+        height: 44,
+        color: '#754141'
     },
     descricao: {
-        padding: 15
+        padding: 15,
+        backgroundColor: 'rgba(247,247,247,1.0)',
+        rowGap: 10,
+        marginBottom: 10,
+        marginLeft: 10,
+        marginRight: 10
     },
     tituloPreco: {
         flexDirection: 'row',
@@ -65,17 +81,20 @@ export default function Cardapio() {
     return (
         <View style={styles.container}>
             <View>
+                <Text style={styles.titulo}>Cardápio</Text>
                 <SectionList
                     sections={cardapio}
                     keyExtractor={(item) => item.name}
                     renderSectionHeader={({ section }) => (
-                        <Text style={styles.item}>{section.category}</Text>
+                        <View style={styles.sectionHeader}>
+                            <Text style={styles.item}>{section.category}</Text>
+                        </View>
                     )}
                     renderItem={({item}) => (
                         <View style={styles.descricao}>
                             <View style={styles.tituloPreco}>
                                 <Text>{item.name}</Text>
-                                <Text>R$ {item.preco}</Text>
+                                <Moeda preco={item.preco} />
                             </View>
                             <Text>{item.descricao}</Text>
                         </View>
